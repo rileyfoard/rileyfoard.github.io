@@ -77,15 +77,12 @@ p { margin: 0 0 1em; }
 .hero__role { font-family: var(--display); font-weight: 600; font-size: clamp(1.25rem, 2.2vw, 1.55rem); line-height: 1.2; margin-bottom: 14px; }
 .hero__bio { color: var(--ink-soft); font-size: 1.1rem; max-width: 46ch; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
-.hero__photo { position: relative; border-radius: 12px; overflow: hidden; }
-.hero__photo img { width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; object-position: 55% 30%; }
-.hero__photo figcaption {
-  position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px;
-  color: #fff; font-size: 0.92rem;
-  background: linear-gradient(transparent, rgba(10, 16, 28, 0.7));
-}
-.hero__thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
-.hero__thumbs img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; cursor: zoom-in; }
+.hero__photo img { width: 100%; height: auto; border-radius: 12px; }
+.hero__major { font-weight: 500; font-size: 1.12rem; margin: -8px 0 14px; color: var(--ink); }
+
+/* Name in the top bar stays hidden while the big name is on screen */
+.nav__name { transition: opacity .25s ease; }
+.nav__name.is-hidden { opacity: 0; pointer-events: none; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(52px, 7vw, 84px) 0; border-top: 1px solid var(--line); }
@@ -139,15 +136,14 @@ p { margin: 0 0 1em; }
 
 /* ---------- Resume ---------- */
 .resume { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; align-items: start; }
-.resume__frame { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-.resume__frame object { width: 100%; height: 900px; display: block; }
+.resume__page img { width: 100%; height: auto; }
 .resume__side { position: sticky; top: 90px; display: flex; flex-direction: column; gap: 10px; }
 
 /* ---------- Contact ---------- */
 .contact { background: var(--ink); color: #fff; padding: clamp(56px, 8vw, 88px) 0 36px; }
-.contact h2 { font-size: clamp(2.4rem, 6vw, 4rem); margin-bottom: 14px; }
+.contact h2 { font-size: clamp(1.5rem, 3vw, 1.95rem); margin-bottom: 10px; }
 .contact p { color: #c9d2e0; font-size: 1.12rem; max-width: 60ch; }
-.contact .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 48px; }
+.contact .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 8px; }
 .contact .btn { border-color: #fff; color: #fff; }
 .contact .btn:hover { background: #fff; color: var(--ink); }
 .contact .btn--primary { border-color: var(--orange); }
@@ -202,11 +198,12 @@ p { margin: 0 0 1em; }
   .detail__intro { grid-template-columns: 1fr; }
   .resume { grid-template-columns: 1fr; }
   .resume__side { position: static; order: -1; flex-direction: row; flex-wrap: wrap; }
-  .resume__frame object { display: none; }
 }
-@media (min-width: 761px) { .resume__fallback { display: none; } }
 @media (max-width: 560px) {
   .tiles { grid-template-columns: 1fr; }
   .skills { grid-template-columns: 1fr; }
   .nav__name { font-size: 1.25rem; }
 }
+
+.honor__thumbs { display: flex; gap: 8px; margin-top: 8px; }
+.honor__thumbs img { width: 84px; height: 84px; object-fit: cover; border-radius: 8px; cursor: zoom-in; }
