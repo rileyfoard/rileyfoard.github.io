@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haptic Glove-Controlled Quadcopter | Riley Foard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="nav__name" href="../index.html">Riley Foard</a>
+    <div class="nav__links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="detail">
+  <div class="wrap">
+    <a class="detail__back" href="../index.html#projects">Back to all projects</a>
+    <p class="detail__where">Pomona College, Spring 2024</p>
+    <h1 class="detail__title">Haptic Glove-Controlled Quadcopter</h1>
+    <ul class="tags"><li>Arduino</li><li>PID control</li><li>Haptic glove</li><li>Custom radio link</li></ul>
+  </div>
+  <div class="wrap detail__intro">
+    <img class="detail__cover" data-zoom src="../images/drone-main.jpg" alt="Haptic Glove-Controlled Quadcopter">
+    <div>
+      <!-- ✏️ BLURB: the write-up for this project. Edit the paragraphs below. -->
+      <p>This project began as a final assignment in Pomona’s electronics course, then continued well into the summer. Our idea was to build a quadcopter from scratch and control it with a wearable glove rather than a conventional joystick.</p>
+      <p>We used scavenged components, a 3D-printed frame, brushless motors, ESCs, an Arduino, and custom radio communication. Gyroscopic sensors measured hand orientation, while pressure sensing helped control altitude. I led electrical integration—including power distribution, wiring, sensors, and radio communication—and co-programmed and tuned the PID flight controller.</p>
+      <p>There was a lot of trial and error. During one poorly tuned test, the drone responded unexpectedly and sent me to the health clinic for stitches. We eventually achieved stable hover and gesture-controlled flight. More than anything, the project gave me practical experience integrating electronics, controls, and mechanical design into a working robot.</p>
+
+    </div>
+  </div>
+  <section class="wrap detail__media">
+    <div class="gallery">
+      <figure><video src="../videos/drone-early.mp4" poster="../videos/drone-early.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>An early iteration, throttled with a potentiometer.</figcaption></figure>
+      <figure><video src="../videos/drone-table.mp4" poster="../videos/drone-table.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>Props spinning up on the bench.</figcaption></figure>
+      <figure><video src="../videos/drone-plots.mp4" poster="../videos/drone-plots.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>Testing with live sensor data on screen.</figcaption></figure>
+      <figure><video src="../videos/drone-flying.mp4" poster="../videos/drone-flying.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>Tethered flight test.</figcaption></figure>
+    </div>
+  </section>
+  <div class="wrap detail__next">
+    <a href="tank.html">Next: Tank Transmission</a>
+  </div>
+</main>
+<footer class="foot"><div class="wrap"><a href="mailto:rfoard@caltech.edu">rfoard@caltech.edu</a><a href="https://linkedin.com/in/RileyFoard" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/rileyfoard" target="_blank" rel="noopener">GitHub</a></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

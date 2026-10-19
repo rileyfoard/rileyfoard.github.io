@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autonomous Underwater Vehicle | Riley Foard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="nav__name" href="../index.html">Riley Foard</a>
+    <div class="nav__links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="detail">
+  <div class="wrap">
+    <a class="detail__back" href="../index.html#projects">Back to all projects</a>
+    <p class="detail__where">Harvey Mudd College, Spring 2025</p>
+    <h1 class="detail__title">Autonomous Underwater Vehicle</h1>
+    <ul class="tags"><li>Teensy</li><li>Waterproofing</li><li>pH, pressure, and light sensors</li><li>Deployed at Dana Point</li></ul>
+  </div>
+  <div class="wrap detail__intro">
+    <img class="detail__cover" data-zoom src="../images/auv-main.jpg" alt="Autonomous Underwater Vehicle">
+    <div>
+      <!-- ✏️ BLURB: the write-up for this project. Edit the paragraphs below. -->
+      <p>In Harvey Mudd’s E80 Experimental Engineering course, my team spent a semester designing an autonomous underwater vehicle to measure environmental conditions at different depths in Dana Point Harbor. Before deploying, we studied underwater dynamics, tested drag models in a wind tunnel, and ran experiments in water tanks and Phake Lake.</p>
+      <p>I led much of the electrical integration and waterproofing, working with the Teensy microcontroller, motors, power system, pressure sensor, light sensor, and pH circuit. We implemented closed-loop depth control so the vehicle could move between target depths while collecting data. An enclosure flood during testing made waterproofing a particularly important part of the design.</p>
+      <p>At Dana Point, we collected light measurements from depths of about 0.25–1.75 meters and calculated a light attenuation coefficient of approximately 0.59 ± 0.03 m⁻¹. Our team received the highest-rated field dataset. The pH sensor had problems during deployment, but that was part of the lesson: field testing rarely goes exactly as planned.</p>
+
+    </div>
+  </div>
+  <section class="wrap detail__media">
+    <div class="gallery">
+      <figure><video src="../videos/auv-tank.mp4" poster="../videos/auv-tank.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>Lowering the AUV into the test tank, then letting it run.</figcaption></figure>
+      <figure><img data-zoom src="../images/auv-team.jpg" alt="The team at Dana Point with our AUV." loading="lazy"><figcaption>The team at Dana Point with our AUV.</figcaption></figure>
+      <figure><img data-zoom src="../images/auv-ocean.jpg" alt="Prepping for deployment in the harbor." loading="lazy"><figcaption>Prepping for deployment in the harbor.</figcaption></figure>
+      <figure><img data-zoom src="../images/auv-windtunnel.jpg" alt="Small-scale testing in the wind tunnel." loading="lazy"><figcaption>Small-scale testing in the wind tunnel.</figcaption></figure>
+      <figure><img data-zoom src="../images/auv-electronics.jpg" alt="Me with the electronics I integrated." loading="lazy"><figcaption>Me with the electronics I integrated.</figcaption></figure>
+    </div>
+  </section>
+  <div class="wrap detail__next">
+    <a href="vacuum-cannon.html">Next: Vacuum Cannon</a>
+  </div>
+</main>
+<footer class="foot"><div class="wrap"><a href="mailto:rfoard@caltech.edu">rfoard@caltech.edu</a><a href="https://linkedin.com/in/RileyFoard" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/rileyfoard" target="_blank" rel="noopener">GitHub</a></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
