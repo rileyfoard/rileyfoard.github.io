@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocker-Bogie Rover | Riley Foard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="nav__name" href="../index.html">Riley Foard</a>
+    <div class="nav__links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="detail">
+  <div class="wrap">
+    <a class="detail__back" href="../index.html#projects">Back to all projects</a>
+    <p class="detail__where">Caltech, June 2026</p>
+    <h1 class="detail__title">Rocker-Bogie Rover</h1>
+    <ul class="tags"><li>Rocker-bogie suspension</li><li>4-DOF arm</li><li>Raspberry Pi + OpenCV</li><li>Team of 5, one week</li></ul>
+  </div>
+  <div class="wrap detail__intro">
+    <img class="detail__cover" data-zoom src="../images/rover-grass.jpg" alt="Rocker-Bogie Rover">
+    <div>
+      <!-- ✏️ BLURB: the write-up for this project. Edit the paragraphs below. -->
+      <p>Our team of five had one week in the shop and a $300 budget to build a robot from scratch. We decided to be ambitious: a rover with rocker-bogie suspension, a four-degree-of-freedom arm, and computer vision to identify rock samples.</p>
+      <p>We initially used an Arduino but switched to a Raspberry Pi to run a camera and OpenCV-based rock recognition. I led most of the electrical integration, connecting the LiPo battery, motor controllers, drive motors, servos, RC communications, and onboard computer. I also helped design and build the arm and integrate the sample-retrieval system.</p>
+      <p>The rover handled uneven terrain particularly well and successfully identified and retrieved a target volcanic rock. With such a short schedule, a lot of the work came down to testing, fixing, and getting the mechanical, electrical, and software systems to cooperate.</p>
+
+    </div>
+  </div>
+  <section class="wrap detail__media">
+    <div class="gallery">
+      <figure><video src="../videos/rover-grass.mp4" poster="../videos/rover-grass.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>The rocker-bogie soaking up uneven grass.</figcaption></figure>
+      <figure><video src="../videos/rover-concrete.mp4" poster="../videos/rover-concrete.jpg" muted loop playsinline controls autoplay preload="metadata"></video><figcaption>Driving down the walkway.</figcaption></figure>
+      <figure><img data-zoom src="../images/rover-me.jpg" alt="Me with the finished rover." loading="lazy"><figcaption>Me with the finished rover.</figcaption></figure>
+      <figure><img data-zoom src="../images/rover-team.jpg" alt="The team of five, rover in hand." loading="lazy"><figcaption>The team of five, rover in hand.</figcaption></figure>
+    </div>
+  </section>
+  <div class="wrap detail__next">
+    <a href="mission-design.html">Next: JPL Multi-Asteroid Mission Design</a>
+  </div>
+</main>
+<footer class="foot"><div class="wrap"><a href="mailto:rfoard@caltech.edu">rfoard@caltech.edu</a><a href="https://linkedin.com/in/RileyFoard" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/rileyfoard" target="_blank" rel="noopener">GitHub</a></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
