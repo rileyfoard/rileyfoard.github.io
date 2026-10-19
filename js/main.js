@@ -1,5 +1,12 @@
 // Photo lightbox: click any photo marked data-zoom to see it full screen.
 document.addEventListener("DOMContentLoaded", () => {
+  // Show the name in the top bar only after scrolling past the big name.
+  const navName = document.querySelector(".nav__name.is-hidden");
+  const hero = document.querySelector(".hero");
+  if (navName && hero && "IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => navName.classList.toggle("is-hidden", e.isIntersecting), { rootMargin: "-100px 0px 0px 0px" }).observe(hero);
+  } else if (navName) { navName.classList.remove("is-hidden"); }
+
   const lb = document.createElement("div");
   lb.className = "lightbox";
   lb.setAttribute("role", "dialog");
