@@ -208,14 +208,3 @@ p { margin: 0 0 1em; }
 .honor__thumbs { display: flex; gap: 8px; margin-top: 8px; }
 .honor__thumbs img { width: 84px; height: 84px; object-fit: cover; border-radius: 8px; cursor: zoom-in; }
 
-/* School logos in the About details */
-.fact__logo { display: block; height: 34px; width: auto; max-width: 100%; margin-bottom: 10px; }
-
-/* Faint rocket doodle in the top-left corner of the home page */
-.space-doodle {
-  position: absolute; top: 60px; left: 0; z-index: 0;
-  width: clamp(200px, calc((100vw - 1120px) / 2 + 40px), 340px); height: auto;
-  color: var(--ink); opacity: .22; pointer-events: none;
-}
-.hero { position: relative; z-index: 1; }
-@media (max-width: 1100px) { .space-doodle { display: none; } }
