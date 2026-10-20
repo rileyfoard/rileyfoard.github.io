@@ -35,6 +35,33 @@
 </nav>
 
 <!-- ======================= HERO ======================= -->
+<svg class="space-doodle" viewBox="0 0 340 280" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="trail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="currentColor" stop-opacity="0"/>
+      <stop offset="1" stop-color="currentColor" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- trajectory -->
+  <path d="M -20 262 Q 130 246 214 102" fill="none" stroke="url(#trail)" stroke-width="1.2" stroke-dasharray="1.5 6" stroke-linecap="round"/>
+  <!-- faint orbit -->
+  <ellipse cx="60" cy="96" rx="44" ry="13" transform="rotate(-18 60 96)" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".55"/>
+  <circle cx="60" cy="96" r="9" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- rocket -->
+  <g transform="translate(222 88) rotate(31)">
+    <path d="M0 -18 C6.5 -12 7.5 -3 6 8 L-6 8 C-7.5 -3 -6.5 -12 0 -18 Z" fill="var(--paper)" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+    <circle cx="0" cy="-5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.1"/>
+    <path d="M-6 1 L-11.5 11 L-6 8.5 M6 1 L11.5 11 L6 8.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M-2.4 11.5 Q0 20 2.4 11.5" fill="none" stroke="var(--orange)" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <!-- stars -->
+  <g fill="currentColor">
+    <path d="M150 34 l1.4 4.2 4.2 1.4 -4.2 1.4 -1.4 4.2 -1.4 -4.2 -4.2 -1.4 4.2 -1.4z"/>
+    <path d="M286 150 l1 3 3 1 -3 1 -1 3 -1 -3 -3 -1 3 -1z"/>
+    <path d="M118 176 l1 3 3 1 -3 1 -1 3 -1 -3 -3 -1 3 -1z"/>
+    <circle cx="262" cy="30" r="1.3"/><circle cx="24" cy="30" r="1.1"/><circle cx="190" cy="196" r="1.1"/><circle cx="310" cy="88" r="1"/>
+  </g>
+</svg>
 <header class="hero wrap" id="top">
   <div class="hero__text">
     <h1 class="hero__name">Riley Foard</h1>
@@ -60,15 +87,15 @@
 <section class="section" id="about">
   <div class="wrap about">
     <img class="about__headshot" src="images/headshot.jpg" alt="Headshot of Riley Foard">
-    <h2>About me</h2>
+    <h2>The Engineer Behind the Engineering</h2>
     <p>When I was nine, I skipped school to watch Space Shuttle Endeavour ride a 747 over the Golden Gate Bridge on its way to retirement. I remember being in awe, and a little confused. How could that be the end? Looking back, that was the moment I caught the bug.</p>
     <p>I've been following it ever since. I launched a hybrid nitrous oxide rocket in the Appalachians at fourteen, tracked asteroids at Pomona's Brackett Observatory, helped build a TIRF microscope in a biophysics lab, and built a drone from scavenged shop parts that, on one memorable night, sent me to the student health clinic for stitches. (I went right back to the scene of the crime.) Through all of it, one thing stayed consistent: I'm a maker. I want the math to turn into something I can hold.</p>
     <p>Now I'm at Caltech studying mechanical engineering with an aerospace minor on the robotics track. I'm most excited by planetary deployable systems, mechatronics, and mechanisms, the stuff that has to unfold, drive, grab, and survive on another world. I don't just want to make a dent in the universe. I want to build the thing that makes it.</p>
     <p>While I'm not in the shop, you might find me playing second base for the Caltech Beavers baseball team, scuba diving with reef sharks in the Galápagos, or defending my second-place finish at the World Stone Skimming Championship in Scotland.</p>
     <dl class="about__facts">
-      <div><dt>Currently at Caltech</dt><dd>Mechanical Engineering (BS), Aerospace Engineering (minor)</dd></div>
-      <div><dt>Before that at Pomona College</dt><dd>Physics (BA)</dd></div>
-      <div><dt>Focus</dt><dd>Planetary deployables, mechatronics, mechanisms, and space engineering</dd></div>
+      <div><img class="fact__logo" src="images/logo-caltech.png" alt="Caltech"><dt>Currently at Caltech</dt><dd>Mechanical Engineering (BS), Aerospace Engineering (minor)</dd></div>
+      <div><img class="fact__logo" src="images/logo-pomona.png" alt="Pomona College"><dt>Before that at Pomona College</dt><dd>Physics (BA)</dd></div>
+      <div><span class="fact__logo" aria-hidden="true"></span><dt>Focus</dt><dd>Planetary deployables, mechatronics, mechanisms, and space engineering</dd></div>
     </dl>
   </div>
 </section>
@@ -162,7 +189,7 @@
     <ul class="honors">
       <li><strong>Caltech Athletics Rookie of the Year</strong><span>2026, Caltech Baseball</span></li>
       <li><strong>Jack Real Aero Club of Southern California Scholarship</strong><span>Awarded for aerospace study at Caltech</span></li>
-      <li class="honor--photos"><strong>One of several Caltech students invited to present at the 2026 Explore JPL open house</strong><span class="honor__thumbs"><img data-zoom src="images/jpl-open-house-1.jpg" alt="Riley presenting at the 2026 Explore JPL open house"><img data-zoom src="images/jpl-open-house-2.jpg" alt="Riley at the 2026 Explore JPL open house"></span></li>
+      <li class="honor--photos"><strong>One of Several Caltech Students Invited to Present at the 2026 Explore JPL Open House</strong><span class="honor__thumbs"><img data-zoom src="images/jpl-open-house-1.jpg" alt="Riley presenting at the 2026 Explore JPL open house"><img data-zoom src="images/jpl-open-house-2.jpg" alt="Riley at the 2026 Explore JPL open house"></span></li>
       <li><strong>Toni and Bob Perpall SURF Fellow</strong><span>Caltech, Blanquart Lab</span></li>
       <li><strong>SURF Presentation Perpall Finalist</strong><span>Caltech</span></li>
       <li><strong>SURP Fellow</strong><span>Pomona College, McCluskey Lab</span></li>
@@ -182,6 +209,7 @@
       <li><h3>Pitcher and Middle Infielder</h3><p class="org">Caltech Baseball, 2025 to present</p><p>Ended my brief retirement and joined the Beavers, leading the team in batting average and OPS in my first year. Named the 2026 Caltech Athletics Rookie of the Year.</p></li>
       <li><h3>Grillmaster</h3><p class="org">Fleming House, Caltech, 2026 to present</p><p>Run all Fleming House dinners and grill steaks, chicken, and salmon for 30+ residents every Thursday night.</p></li>
       <li><h3>Treasurer</h3><p class="org">Caltech Ski Club, 2025 to present</p><p>Manage and allocate the club's funding for winter trips to Mammoth.</p></li>
+      <li><h3>Founding Member, Formula SAE</h3><p class="org">Harvey Mudd College, 2024 to 2025</p><p>Authored technical sections of the club proposal and secured 5,000 simulation core-hours through a sponsorship with SimScale.</p></li>
       <li><h3>Physics Outreach Program Leader</h3><p class="org">Pomona College, 2024 to 2025</p><p>Led the revival of a dormant outreach program that brings local elementary schoolers into Pomona's physics labs for 20+ hands-on experiments.</p></li>
       <li><h3>Founder, Physics and Philosophy Club</h3><p class="org">Pomona College, 2024 to 2025</p><p>Started a weekly discussion group with a friend that grew to 25+ students, covering everything from Aristotle to the Copenhagen interpretation.</p></li>
       <li><h3>Physics Thesis Writing Advisor</h3><p class="org">Pomona Center for Speaking, Writing, and the Image, 2024 to 2025</p><p>The first-ever writing advisor for physics theses: reader, editor, and advisor for all 19 senior physics theses.</p></li>
