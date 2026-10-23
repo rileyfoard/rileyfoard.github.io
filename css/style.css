@@ -215,3 +215,13 @@ p { margin: 0 0 1em; }
 .lightbox video { width: min(92vw, 1000px); max-height: 86vh; border-radius: 8px; background: #000; }
 @media (max-width: 960px) { .skills, .honors { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .skills, .honors { grid-template-columns: 1fr; } }
+
+/* In-progress project */
+.tile--progress img { filter: grayscale(.85) brightness(.8); }
+.tile--progress:hover img { filter: grayscale(.4) brightness(.85); }
+.tile__badge { position: absolute; top: 14px; left: 14px; z-index: 1; background: var(--orange); color: #fff; font-size: .82rem; font-weight: 600; padding: 4px 11px; border-radius: 999px; }
+.progress-pill { display: inline-block; margin-left: 10px; background: var(--orange); color: #fff; font-size: .8rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; vertical-align: 2px; }
+.history { margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--line); }
+.history h2 { margin-bottom: 10px; }
+.history > p { color: var(--ink-soft); max-width: 60ch; margin-bottom: 24px; }
+.history .gallery { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
