@@ -217,9 +217,18 @@ p { margin: 0 0 1em; }
 @media (max-width: 560px) { .skills, .honors { grid-template-columns: 1fr; } }
 
 /* In-progress project */
-.tile--progress img { filter: grayscale(.85) brightness(.8); }
-.tile--progress:hover img { filter: grayscale(.4) brightness(.85); }
-.tile__badge { position: absolute; top: 14px; left: 14px; z-index: 1; background: var(--orange); color: #fff; font-size: .82rem; font-weight: 600; padding: 4px 11px; border-radius: 999px; }
+.tile--progress img { filter: grayscale(.45) brightness(.78); }
+.tile--progress:hover img { filter: grayscale(.2) brightness(.85); }
+.tile--progress::before { content: ""; position: absolute; inset: 0; z-index: 1; background: rgba(40, 44, 52, .28); pointer-events: none; }
+.tile__banner {
+  position: absolute; left: 0; right: 0; top: 12px; z-index: 2;
+  padding: 5px 0; text-align: center;
+  background: rgba(255, 255, 255, .16); backdrop-filter: blur(2px);
+  border-top: 1px solid rgba(255, 255, 255, .35); border-bottom: 1px solid rgba(255, 255, 255, .35);
+  color: rgba(255, 255, 255, .92); font-family: var(--display); font-weight: 700;
+  font-size: 1.15rem; letter-spacing: .02em;
+}
+.tile--progress .tile__text { z-index: 2; }
 .progress-pill { display: inline-block; margin-left: 10px; background: var(--orange); color: #fff; font-size: .8rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; vertical-align: 2px; }
 .history { margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--line); }
 .history h2 { margin-bottom: 10px; }
