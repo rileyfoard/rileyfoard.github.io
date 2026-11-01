@@ -235,17 +235,17 @@ p { margin: 0 0 1em; }
 .history > p { color: var(--ink-soft); max-width: 60ch; margin-bottom: 24px; }
 .history .gallery { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
 
-/* "Where it started" rocket inset in the About section */
-.origin { display: flex; gap: 18px; align-items: stretch; width: fit-content; max-width: 100%; margin: 4px 0 24px; padding: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
-.origin .origin__video img { width: 190px; height: 300px; object-fit: cover; object-position: 50% 60%; }
-.origin__side { display: flex; flex-direction: column; max-width: 300px; }
-.origin__label { font-family: var(--display); font-weight: 700; font-size: 1.5rem; margin: 2px 0 6px; }
-.origin figcaption { color: var(--ink); font-size: 1rem; line-height: 1.45; }
-.origin figcaption span { color: var(--ink-soft); font-size: .9rem; }
-.origin__photos { display: flex; gap: 8px; margin-top: auto; padding-top: 14px; }
-.origin__photos .thumb img { width: 140px; height: 105px; object-fit: cover; }
+/* "Where it all started" rocket strip under Projects */
+.origin { display: flex; gap: 22px; align-items: stretch; margin-top: 28px; padding: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+.origin .origin__video img { width: 200px; height: 300px; object-fit: cover; object-position: 50% 60%; }
+.origin__side { display: flex; flex-direction: column; }
+.origin__label { font-size: 1.8rem; margin: 4px 0 8px; }
+.origin__side p { font-size: 1.1rem; margin: 0; }
+.origin__side .origin__meta { color: var(--ink-soft); font-size: .95rem; margin-top: 4px; }
+.origin__photos { display: flex; gap: 10px; margin-top: auto; padding-top: 16px; }
+.origin__photos .thumb img { width: 180px; height: 135px; object-fit: cover; }
 @media (max-width: 560px) {
-  .origin { flex-direction: column; width: 100%; }
-  .origin .origin__video img { width: 100%; height: 360px; }
-  .origin__photos .thumb { flex: 1; } .origin__photos .thumb img { width: 100%; }
+  .origin { flex-direction: column; }
+  .origin .origin__video img { width: 100%; height: 380px; }
+  .origin__photos .thumb { flex: 1; } .origin__photos .thumb img { width: 100%; height: 110px; }
 }
